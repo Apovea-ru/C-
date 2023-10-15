@@ -24,40 +24,58 @@
 // 8 -> 2, 4, 6, 8
 
 // Задача 2
-int a = int.Parse(Console.ReadLine());
-int b = int.Parse(Console.ReadLine());
-int max = a;
-if (b > a) 
-{
-    max = b;
-}
-Console.WriteLine(max);
+// using System.ComponentModel;
+
+// int a = int.Parse(Console.ReadLine());
+// int b = int.Parse(Console.ReadLine());
+// int max = a;
+// if (b > a) 
+// {
+//     max = b;
+// }
+// Console.WriteLine(max);
 
 // Задача 4: Напишите программу, которая принимает на вход
 // три числа и выдает максимальное из этих чисел.
 
-int d = int.Parse(Console.ReadLine());
-int f = int.Parse(Console.ReadLine());
-int g = int.Parse(Console.ReadLine());
-int max = a;
-if ((f > d) && (f > g))
-{
-    max = f;
-}
-else if ((g > d) && (g > f))
-{
-    max = g;
-}
-Console.WriteLine(max);
+// int d = int.Parse(Console.ReadLine());
+// int f = int.Parse(Console.ReadLine());
+// int g = int.Parse(Console.ReadLine());
+// int max = a;
+// if ((f > d) && (f > g))
+// {
+//     max = f;
+// }
+// else if ((g > d) && (g > f))
+// {
+//     max = g;
+// }
+// Console.WriteLine(max);
 
 // Задача 6: Напишите программу, которая на вход принимает число и выдает, является ли число четным (делится ли оно на два без остатка).
 
-int w = int.Parse(Console.ReadLine());
-if (w % 2 == 0)
+// int w = int.Parse(Console.ReadLine());
+// if (w % 2 == 0)
+// {
+//     Console.WriteLine("Четное");
+// }
+// else
+// {
+//     Console.WriteLine("Нечетное");
+// }
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+int r = int.Parse(Console.ReadLine());
+int i = 0;
+while (i > r)
 {
-    Console.WriteLine("Четное");
-}
-else
-{
-    Console.WriteLine("Нечетное");
+    if (i % 2 == 0)
+    {
+        Console.WriteLine(i);
+    };
+    i = i + 1;
 }
